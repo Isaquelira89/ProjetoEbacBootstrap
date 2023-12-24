@@ -1,0 +1,48 @@
+nav{
+    justify-content: flex-end;
+    
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+header h1{
+    color: white;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.765);
+}
+body{
+    background-color: rgb(225, 225, 225);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: black;
+    color: white;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+section .container h2{
+    margin-top: 30px;
+}
+section .container p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card{
+    
+    margin-bottom: 10px;
+    
+}
+.carousel-item img {
+    width: 300px; /* Defina o tamanho desejado */
+    height: auto; /* Mantenha a proporção original da imagem */
+    
+}

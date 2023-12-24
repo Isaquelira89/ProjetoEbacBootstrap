@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Aplicado</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Bootstrap? Porque usar</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon color-white"></span></button>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre o Bootstrap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Carousel</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+        <h2>Sobre o Bootstrap</h1>
+            <p>O Bootstrap é um framework de código aberto (open source) desenvolvido pela equipe do Twitter. Ele fornece um conjunto de ferramentas e estilos para ajudar na criação de interfaces web responsivas e modernas. O Bootstrap é baseado principalmente em HTML, CSS e JavaScript.
+
+                Principais características do Bootstrap:</p>
+    </section>
+</div>
+<div class="container" id="preta">
+    
+    <div id="modal" class="modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Professor da EBAC?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Se Voce é um professor da Ebac, que veio corrigir meu exercício, Gostaria de agradecer pela aula, kkkk Obrigado!!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Nao Sou Professor</button>
+                    <button class="btn btn-success btn-sm"data-bs-dismiss="modal">Sou Professor</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <section>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Grid System</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>O Bootstrap utiliza um sistema de grid responsivo que facilita a criação de layouts flexíveis e adaptáveis a diferentes tamanhos de tela.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3> Componentes Prontos:</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Ele inclui uma variedade de componentes prontos para uso, como botões, formulários, navegação, alertas, entre outros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Estilos e Temas: </h3>
+                    </div>
+                    <div class="card-body">
+                        <p>O Bootstrap oferece um conjunto de estilos básicos que proporcionam uma aparência limpa e moderna. Além disso, é possível personalizar com estilos próprios.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+            
+        
+    </section>
+    <section>
+        <div class="carousel slide" id="carousel1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="https://icons.getbootstrap.jp/assets/img/icons-hero.png" alt="icon bootstrap"> 
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://msatechnosoft.in/blog/wp-content/uploads/2018/06/bootstrap-image-MSA-Technosoft.jpg" alt="icon bootstrap"> 
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://img-c.udemycdn.com/course/750x422/4738826_b4e6_2.jpg" alt="icon bootstrap"> 
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPPFLcj4lTnVHwJZIFi-eDPgRIuSC6Q_IBuksOQGRnAQ2AD0m0UEONV5zQzNmdz2-8ilU&usqp=CAU" alt="icon bootstrap"> 
+                </div>
+                <button data-bs-target="#carousel1" data-bs-slide="prev" class="carousel-control-prev" type="button"><span class="carousel-control-prev-icon"></span></button>
+            <button data-bs-target="#carousel1" data-bs-slide="next" class="carousel-control-next"type="button"><span class="carousel-control-next-icon"></span></button>
+            <div class="carousel-indicators">
+                <button data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carousel1" data-bs-slide-to="1" class="active"></button>
+                <button data-bs-target="#carousel1" data-bs-slide-to="2" class="active"></button>
+                <button data-bs-target="#carousel1" data-bs-slide-to="3" class="active"></button>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+    
+</body>
+<script src="bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        const modalex= new bootstrap.Modal('#modal')
+            setTimeout(function(){
+                modalex.show()
+            },3000);
+    })
+</script>
+</html>
